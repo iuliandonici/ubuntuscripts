@@ -1,6 +1,9 @@
 #!/bin/bash
 
 # VARIABLES
+# - Disabling logging out of the system when the laptop's lid is closed;
+# in doing so, the lid_config_file variable is used to name the file 
+# that contains options to achieve this.
 lid_config_file="/etc/systemd/logind.conf";
 # Check if the file containing the lid part even exists
 if [ -f $lid_config_file ];
